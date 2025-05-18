@@ -24,7 +24,7 @@ impl<'a> MatdRef<'a> {
     /// The values are in row-major order.
     pub fn data(&self) -> &'a [f64] {
         let len = self.nrows() * self.ncols();
-        let data = unsafe { self.ref_.data.as_slice(len) };
+        let data = unsafe { std::slice::from_raw_parts(self.ref_.data, len) };
         data
     }
 

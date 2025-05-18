@@ -1,6 +1,6 @@
 [package]
 name = "apriltag"
-version = "0.4.0"
+version = "0.5.0"
 authors = ["jerry73204 <jerry73204@gmail.com>"]
 edition = "2021"
 description = "High level Rust bindings to AprilTag library"
@@ -12,7 +12,7 @@ readme = "README.md"
 license = "BSD-2-Clause"
 
 [dependencies]
-apriltag-sys = { version = "0.3.0", path = "../apriltag-sys" }
+apriltag-sys = { version = "0.4.0", path = "../apriltag-sys" }
 libc = "0.2.139"
 measurements = "0.11.0"
 noisy_float = "0.2.0"
