@@ -13,8 +13,6 @@ license = "BSD-2-Clause"
 
 [dependencies]
 apriltag-sys = { version = "0.4.0", path = "../apriltag-sys" }
-apriltag-image = { version = "0.1.0", path = "../apriltag-image", optional = true }
-apriltag-nalgebra = { version = "0.1.0", path = "../apriltag-nalgebra", optional = true }
 libc = "0.2.139"
 measurements = "0.11.0"
 noisy_float = "0.2.0"
@@ -26,6 +24,3 @@ clap = { version = "4.1.4", features = ["derive"] }
 
 [features]
 buildtime-bindgen = ["apriltag-sys/buildtime-bindgen"]
-image = ["apriltag-image"]
-nalgebra = ["apriltag-nalgebra"]
-full = ["image", "nalgebra"]
